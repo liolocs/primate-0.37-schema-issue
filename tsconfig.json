@@ -1,0 +1,58 @@
+{
+  "extends": "primate/tsconfig",
+  "compilerOptions": {
+    "baseUrl": "${configDir}",
+    "paths": {
+      "#config/*": [
+        "config/*"
+      ],
+      "#session": [
+        "config/session"
+      ],
+      "#i18n": [
+        "config/i18n"
+      ],
+      "#view/*": [
+        "views/*"
+      ],
+      "#component/*": [
+        "components/*"
+      ],
+      "#schema/*": [
+        "schemas/*"
+      ],
+      "#script/*": [
+        "scripts/*"
+      ],
+      "#store/*": [
+        "stores/*"
+      ],
+      "#locale/*": [
+        "locales/*"
+      ],
+      "#static/*": [
+        "static/*"
+      ]
+    },
+    "plugins": [
+      {
+        "name": "@plsp/svelte"
+      }
+    ]
+  },
+  "include": [
+    "config",
+    "views",
+    "components",
+    "routes",
+    "stores",
+    "locales",
+    "static",
+    "test",
+    "schemas",
+    "scripts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
